@@ -40,9 +40,9 @@ if user == "Acheteur":
         try:
             Prix = float(Prix)
             if prediction >= Prix:
-                st.subheader(f"Vous allez faire une bonne affaire car pour une voiture avec ces caractéristiques, notre modèle prédit un prix égal à {prediction[0]:.2f} £")
+                st.subheader(f"Vous allez faire une bonne affaire car pour une voiture avec ces caractéristiques, notre modèle prédit un prix égal à {prediction[0]:.2f} $")
             else:
-                st.subheader(f"Le prix affiché sur l'annonce est élevé car pour une voiture avec ces caractéristiques, notre modèle prédit un prix égal à {prediction[0]:.2f} £")
+                st.subheader(f"Le prix affiché sur l'annonce est élevé car pour une voiture avec ces caractéristiques, notre modèle prédit un prix égal à {prediction[0]:.2f} $")
         except:
             st.write("Veuillez entrer un prix valide")
     else:
@@ -58,10 +58,10 @@ else:
         except:
             st.write("Veuillez entrer un prix valide")
         if prediction > Prix:
-            st.subheader(f"Le prix auquel vous voulez vendre votre voiture est faible car pour une voiture avec ces caractéristiques, notre modèle prédit un prix égal à {prediction[0]:.2f} £")
+            st.subheader(f"Le prix auquel vous voulez vendre votre voiture est faible car pour une voiture avec ces caractéristiques, notre modèle prédit un prix égal à {prediction[0]:.2f} $")
         elif prediction == Prix:
-            st.subheader(f"Le prix auquel vous voulez vendre votre voiture est adéquat car pour une voiture avec ces caractéristiques, notre modèle prédit un prix égal à {prediction[0]:.2f} £")
+            st.subheader(f"Le prix auquel vous voulez vendre votre voiture est adéquat car pour une voiture avec ces caractéristiques, notre modèle prédit un prix égal à {prediction[0]:.2f} $")
         else:
-            st.subheader(f"Le prix auquel vous voulez vendre votre voiture est élevé car pour une voiture avec ces caractéristiques, notre modèle prédit un prix égal à {prediction[0]:.2f} £")
+            st.subheader(f"Le prix auquel vous voulez vendre votre voiture est élevé car pour une voiture avec ces caractéristiques, notre modèle prédit un prix égal à {prediction[0]:.2f} $")
 
     
