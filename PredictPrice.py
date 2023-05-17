@@ -55,7 +55,7 @@ print('Variable Ordinale:', ordinal_cols)
 print('Variable Nominale:', nominal_cols)
 
 
-'''###Visualisation des données
+###Visualisation des données
 #Visualisation des variables catégorielles nominales
 fig, axs = plt.subplots(nrows=1, ncols=2, figsize=(12,6))
 sns.countplot(x='fuelType', data=df, ax=axs[0])
@@ -113,7 +113,7 @@ sns.scatterplot(x=df.year, y=df.price, ax=axs[2])
 plt.show()
 #Matrice de corrélation
 sns.heatmap(df.corr(), annot=True, cmap="RdBu")
-plt.show()'''
+plt.show()
 
 
 ####Pré-Processing
